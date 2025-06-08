@@ -7,7 +7,7 @@ GameRoom::GameRoom(const QString& roomId, QObject *parent)
 {
     // Connect signals from the internal Game object to this room's slots.
     // This allows the GameRoom to react to game events and notify m_players.
-    connect(&m_game, &Game::gsChanged, this, &GameRoom::onGameStateChanged);
+    // connect(&m_game, &Game::gsChanged, this, &GameRoom::onGameStateChanged);
     connect(&m_game, &Game::boardChanged, this, &GameRoom::onBoardChanged);
 }
 
@@ -67,12 +67,12 @@ void GameRoom::assignSymbolsAndStart()
     // Assign X to the first player, O to the second
     for (int i = 0; i < m_players.length(); ++i) {
         Player* player = m_players.at(i);
-        char symbol = (i == 0) ? 'X' : 'O';
+        bool isX = (i == 0) ? true : false;
 
         QJsonObject json;
         json["CID"] = player->id();
         json["CMD"] = "ASN";
-        json["SYM"] = QString(symbol);
+        json["ISX"] = isX;
         json["INGAME"] = true;
         json["RID"] = m_roomId;
         player->sendMessage(json);
@@ -143,6 +143,7 @@ void GameRoom::processChat(const QJsonObject& json)
 
     QJsonObject jsonData;
     jsonData["RID"] = m_roomId;
+    jsonData["INGAME"] = true;
     jsonData["CMD"] = json.value("CMD");
     jsonData["MSG"] = currentPlayer->name() + ": " + json.value("MSG").toString();
     broadcastJson(jsonData);
@@ -210,6 +211,7 @@ void GameRoom::onGameStateChanged()
     case GameState::XWON: gameStateChar = "X"; break;
     case GameState::OWON: gameStateChar = "O"; break;
     case GameState::DRAW: gameStateChar = "D"; break;
+    case GameState::BEGIN: gameStateChar = "B"; break;
     default: break;
     }
     updateJson["GS"] = gameStateChar;

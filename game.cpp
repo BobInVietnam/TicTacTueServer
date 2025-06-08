@@ -70,9 +70,9 @@ bool Game::move(int x, int y)
         xTimer->pause();
         oTimer->start();
     }
+    checkWin();
     emit boardChanged();
     board.display();
-    checkWin();
     switchPlayer();
     return true;
 }
@@ -88,6 +88,8 @@ void Game::checkWin()
         return;
     } else if (board.isFull()) {
         setGs(GameState::DRAW);
+        xTimer->pause();
+        oTimer->pause();
     }
 }
 
