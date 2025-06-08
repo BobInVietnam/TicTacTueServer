@@ -1,7 +1,5 @@
-/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Debug/TicTacTueServer_autogen/EWIEGA46WW/moc_tictactueserver.cpp: /home/bob-in-linux/Workspace/qt/TicTacTueServer/tictactueserver.h \
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Debug/TicTacTueServer_autogen/EWIEGA46WW/moc_player.cpp: /home/bob-in-linux/Workspace/qt/TicTacTueServer/player.h \
   /home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Debug/TicTacTueServer_autogen/moc_predefs.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/QJsonObject \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/QMap \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/QObject \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/q17memory.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/q20functional.h \
@@ -24,9 +22,6 @@
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qbytearrayalgorithms.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qbytearraylist.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qbytearrayview.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qcalendar.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qcborcommon.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qcborvalue.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qchar.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qcompare.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qcompare_impl.h \
@@ -40,9 +35,7 @@
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qcontiguouscache.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qdatastream.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qdatetime.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qdebug.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qendian.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qexceptionhandling.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qflags.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qfloat16.h \
@@ -58,13 +51,8 @@
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qiodevicebase.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qiterable.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qiterator.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qjsondocument.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qjsonobject.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qjsonparseerror.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qjsonvalue.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qlatin1stringview.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qlist.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qlocale.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qlogging.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qmalloc.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qmap.h \
@@ -82,7 +70,6 @@
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qpair.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qprocessordetection.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qrefcount.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qregularexpression.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qscopedpointer.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qscopeguard.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qset.h \
@@ -128,19 +115,15 @@
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qtversionchecks.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qtypeinfo.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qtypes.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qurl.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qutf8stringview.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/quuid.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qvariant.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qvarlengtharray.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qversiontagging.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qxptype_traits.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtCore/qyieldcpu.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtNetwork/QTcpServer \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtNetwork/QTcpSocket \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtNetwork/qabstractsocket.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtNetwork/qhostaddress.h \
-  /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtNetwork/qtcpserver.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtNetwork/qtcpsocket.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtNetwork/qtnetwork-config.h \
   /home/bob-in-linux/Qt/6.9.0/gcc_64/include/QtNetwork/qtnetworkexports.h \
@@ -197,8 +180,6 @@
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
-  /usr/include/c++/13/bits/random.h \
-  /usr/include/c++/13/bits/random.tcc \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
@@ -283,7 +264,6 @@
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
-  /usr/include/c++/13/random \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/stdexcept \
@@ -385,7 +365,6 @@
   /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \

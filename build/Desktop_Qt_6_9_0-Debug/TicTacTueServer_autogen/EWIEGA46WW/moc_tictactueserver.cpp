@@ -43,7 +43,8 @@ template <> constexpr inline auto TicTacTueServer::qt_create_metaobjectdata<qt_m
         "",
         "onClientDisconnected",
         "onReadyRead",
-        "checkGameState"
+        "onRoomEmptied",
+        "roomId"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -53,8 +54,10 @@ template <> constexpr inline auto TicTacTueServer::qt_create_metaobjectdata<qt_m
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'onReadyRead'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'checkGameState'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onRoomEmptied'
+        QtMocHelpers::SlotData<void(const QString &)>(5, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 6 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -81,11 +84,10 @@ void TicTacTueServer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 0: _t->onNewConnection(); break;
         case 1: _t->onClientDisconnected(); break;
         case 2: _t->onReadyRead(); break;
-        case 3: _t->checkGameState(); break;
+        case 3: _t->onRoomEmptied((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *TicTacTueServer::metaObject() const

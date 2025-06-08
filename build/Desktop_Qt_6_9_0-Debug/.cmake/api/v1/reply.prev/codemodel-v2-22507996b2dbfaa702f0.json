@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-137b08b8135b18c4b83c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TicTacTueServer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TicTacTueServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TicTacTueServer-Debug-4493969fbe956247f13e.json",
+					"name" : "TicTacTueServer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TicTacTueServer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TicTacTueServer_autogen-Debug-f41bd040da3ae58edb6f.json",
+					"name" : "TicTacTueServer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TicTacTueServer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TicTacTueServer_autogen_timestamp_deps-Debug-b9f84847aef2914111d2.json",
+					"name" : "TicTacTueServer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Debug",
+		"source" : "/home/bob-in-linux/Workspace/qt/TicTacTueServer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

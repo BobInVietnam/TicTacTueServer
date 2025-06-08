@@ -14,6 +14,10 @@
 			}
 		]
 	},
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
 	"id" : "TicTacTueServer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
 	"name" : "TicTacTueServer_autogen_timestamp_deps",

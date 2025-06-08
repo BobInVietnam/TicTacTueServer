@@ -1,48 +1,52 @@
-#ifndef TicTacTueServer_H
-#define TicTacTueServer_H
+#ifndef TICTACTUESERVER_H
+#define TICTACTUESERVER_H
 
 #include <QObject>
 #include <QTcpServer>
 #include <QTcpSocket>
-#include <QVector>
+#include <QMap>
 #include <QJsonObject>
-#include <QJsonDocument>
-#include "game.h"
-#include "player.h"
+#include <random>
+
+class Player;
+class GameRoom;
 
 class TicTacTueServer : public QObject
 {
     Q_OBJECT
 public:
     explicit TicTacTueServer(QObject *parent = nullptr);
+    ~TicTacTueServer();
     bool startServer(quint16 port);
+    static void sendJsonToClient(QTcpSocket* client, const QJsonObject& json);
 
 private slots:
     void onNewConnection();
     void onClientDisconnected();
     void onReadyRead();
-    void checkGameState();
-signals:
+    void onRoomEmptied(const QString& roomId);
 
 private:
-    QTcpServer *m_tcpServer;
-    QVector<QTcpSocket*> m_clients;
-    Game game;
-    std::unordered_map<QTcpSocket*, Player> m_playerinfos;
-    QMap<QTcpSocket*, QByteArray> m_socketReadBuffers;
-    QMap<QTcpSocket*, quint32> m_socketBlockSizes;
+    void processMessage(QTcpSocket* clientSocket, const QJsonObject& json);
 
-    void generateRandomId();
-    void initializeGame();
-    void processMessage(QTcpSocket*, const QJsonObject&);
-    void broadcastMessage(const QByteArray &message, QTcpSocket *excludeClient = nullptr);
-    void sendToClient(QTcpSocket *, const QByteArray&);
-    void handleMove(QTcpSocket *sender, int index);
-    bool checkWin(char player);
-    bool checkDraw();
-    void assignSymbolsAndStart();
-    char getPlayerSymbol(QTcpSocket *client);
-    QTcpSocket* getOpponent(QTcpSocket* client);
+    // Command Handlers
+    void playerCreateRoom(QTcpSocket* clientSocket, const QJsonObject& json);
+    void playerJoinRoom(QTcpSocket* clientSocket, const QJsonObject& json);
+    void playerLeaveRoom(QTcpSocket* clientSocket, const QJsonObject& json);
+
+
+    QString generateUniqueId(int length);
+
+    QTcpServer* m_tcpServer;
+    // Maps to track server state
+    QMap<QTcpSocket*, Player*> m_clients;
+    QMap<QString, GameRoom*> m_gameRooms;
+
+    // Buffer for handling incoming TCP data streams
+    QMap<QTcpSocket*, QByteArray> m_readBuffers;
+
+    // For random ID generation
+    std::mt19937 m_rng;
 };
 
-#endif // TicTacTueServer_H
+#endif // TICTACTUESERVER_H
