@@ -13,11 +13,13 @@ CountdownTimer *Game::getOTimer() const
 void Game::xTimerTimesup()
 {
     setGs(GameState::OWON);
+    emit boardChanged();
 }
 
 void Game::oTimerTimesup()
 {
     setGs(GameState::XWON);
+    emit boardChanged();
 }
 
 Game::Game() {

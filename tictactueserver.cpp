@@ -121,6 +121,8 @@ void TicTacTueServer::processMessage(QTcpSocket* clientSocket, const QJsonObject
             playerJoinRoom(clientSocket, json);
         } else if (command == "LR") {
             playerLeaveRoom(clientSocket, json);
+        } else if (command == "USRNAME") {
+            playerAssignUsername(clientSocket, json);
         } else {
             // Other out-of-game commands like set username can be added here
         }
@@ -190,6 +192,15 @@ void TicTacTueServer::playerLeaveRoom(QTcpSocket* clientSocket, const QJsonObjec
     } else {
         qWarning() << "Player" << player->id() << "tried to leave a room they are not in:" << roomId;
     }
+}
+
+void TicTacTueServer::playerAssignUsername(QTcpSocket * clientSocket, const QJsonObject & json)
+{
+    Player* player = m_clients.value(clientSocket);
+    if (!player) return;
+
+    QString newUsrname = json.value("USRNAME").toString();
+    player->setName(newUsrname);
 }
 
 void TicTacTueServer::onRoomEmptied(const QString& roomId)

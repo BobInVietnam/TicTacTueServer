@@ -33,7 +33,7 @@ private:
     void playerCreateRoom(QTcpSocket* clientSocket, const QJsonObject& json);
     void playerJoinRoom(QTcpSocket* clientSocket, const QJsonObject& json);
     void playerLeaveRoom(QTcpSocket* clientSocket, const QJsonObject& json);
-
+    void playerAssignUsername(QTcpSocket *, const QJsonObject &);
 
     QString generateUniqueId(int length);
 
