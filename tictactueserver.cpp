@@ -106,6 +106,14 @@ void TicTacTueServer::onReadyRead()
 
 void TicTacTueServer::processMessage(QTcpSocket* clientSocket, const QJsonObject& json)
 {
+    if (json.value("CMD").toString() == "PING") {
+        qint64 serverResponseTime = QDateTime::currentMSecsSinceEpoch();
+        QJsonObject response;
+        response["CID"] = json.value("CID");
+        response["CMD"] = "PONG";
+        response["S_SENT"] = serverResponseTime;
+        sendJsonToClient(clientSocket, response);
+    }
     if (json.value("INGAME").toBool()) {
         QString roomId = json.value("RID").toString();
         if (m_gameRooms.contains(roomId)) {

@@ -42,3 +42,17 @@
 631	4313	1749473502608635306	CMakeFiles/TicTacTueServer.dir/TicTacTueServer_autogen/mocs_compilation.cpp.o	bf3e9bfe9816c83
 632	4435	1749473502609635303	CMakeFiles/TicTacTueServer.dir/tictactueserver.cpp.o	958a1858dac52ab2
 4435	4758	1749473506412621355	TicTacTueServer	af368f748d6f0240
+3	19	1749476430902603052	TicTacTueServer_autogen/timestamp	cc26cbf0dfbc61cb
+3	19	1749476430902603052	TicTacTueServer_autogen/mocs_compilation.cpp	cc26cbf0dfbc61cb
+3	19	1749476430902603052	/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Debug/TicTacTueServer_autogen/timestamp	cc26cbf0dfbc61cb
+3	19	1749476430902603052	/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Debug/TicTacTueServer_autogen/mocs_compilation.cpp	cc26cbf0dfbc61cb
+19	2941	1749476430918603330	CMakeFiles/TicTacTueServer.dir/tictactueserver.cpp.o	958a1858dac52ab2
+2941	3200	1749476433840653853	TicTacTueServer	af368f748d6f0240
+3	21	1749481904966281082	TicTacTueServer_autogen/timestamp	cc26cbf0dfbc61cb
+3	21	1749481904966281082	TicTacTueServer_autogen/mocs_compilation.cpp	cc26cbf0dfbc61cb
+3	21	1749481904966281082	/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Debug/TicTacTueServer_autogen/timestamp	cc26cbf0dfbc61cb
+3	21	1749481904966281082	/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Debug/TicTacTueServer_autogen/mocs_compilation.cpp	cc26cbf0dfbc61cb
+21	2470	1749481904984280980	CMakeFiles/TicTacTueServer.dir/tictactueserver.cpp.o	958a1858dac52ab2
+2470	2722	1749481907433267162	TicTacTueServer	af368f748d6f0240
+4	10	1749495863620801255	CMakeFiles/clean.additional	50d93e30c2e20135
+10	16	1749495863626801284	clean	1d3b479351030d06
