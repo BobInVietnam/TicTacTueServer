@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_TicTacTueServer_FILE /home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/TicTacTueServer)
+set(__QT_DEPLOY_TARGET_TicTacTueServer_TYPE EXECUTABLE)

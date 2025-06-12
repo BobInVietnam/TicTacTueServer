@@ -1,0 +1,9 @@
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/CMakeFiles/TicTacTueServer.dir
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/CMakeFiles/edit_cache.dir
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/CMakeFiles/rebuild_cache.dir
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/CMakeFiles/list_install_components.dir
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/CMakeFiles/install.dir
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/CMakeFiles/install/local.dir
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/CMakeFiles/install/strip.dir
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/CMakeFiles/TicTacTueServer_autogen_timestamp_deps.dir
+/home/bob-in-linux/Workspace/qt/TicTacTueServer/build/Desktop_Qt_6_9_0-Release/CMakeFiles/TicTacTueServer_autogen.dir

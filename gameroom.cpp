@@ -78,6 +78,17 @@ void GameRoom::assignSymbolsAndStart()
         player->sendMessage(json);
     }
 
+    QJsonObject json2;
+    json2["CMD"] = "ASN";
+    json2["INGAME"] = false;
+    json2["X_NAME"] = m_players[0]->name();
+    json2["X_WIN"] = m_players[0]->wonTime();
+    json2["X_LOSE"] = m_players[0]->lostTime();
+    json2["O_NAME"] = m_players[1]->name();
+    json2["O_WIN"] = m_players[1]->wonTime();
+    json2["O_LOSE"] = m_players[1]->lostTime();
+    broadcastJson(json2);
+
     // Broadcast initial board state
     onBoardChanged();
 }
@@ -208,8 +219,18 @@ void GameRoom::onGameStateChanged()
 
     QString gameStateChar = "N"; // N for "Neither" (ongoing)
     switch (m_game.gs()) {
-    case GameState::XWON: gameStateChar = "X"; break;
-    case GameState::OWON: gameStateChar = "O"; break;
+    case GameState::XWON:  {
+        m_players[0]->setWonTime(m_players[0]->wonTime() + 1);
+        m_players[1]->setLostTime(m_players[1]->lostTime() + 1);
+        qDebug() << m_players[0]->name() << " won and scored 1 point!";
+        gameStateChar = "X"; break;
+    }
+    case GameState::OWON: {
+        m_players[1]->setWonTime(m_players[1]->wonTime() + 1);
+        m_players[0]->setLostTime(m_players[0]->lostTime() + 1);
+        qDebug() << m_players[1]->name() << " won and scored 1 point!";
+        gameStateChar = "O"; break;
+    }
     case GameState::DRAW: gameStateChar = "D"; break;
     case GameState::BEGIN: gameStateChar = "B"; break;
     default: break;
